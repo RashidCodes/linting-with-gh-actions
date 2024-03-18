@@ -1,0 +1,721 @@
+version: 2
+sources:
+  - name: production
+    tables:
+      - name: billofmaterials
+        description: ''
+        
+        columns:
+          - name: billofmaterialsid
+            description: ''
+            
+          - name: bomlevel
+            description: ''
+            
+          - name: componentid
+            description: ''
+            
+          - name: enddate
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: perassemblyqty
+            description: ''
+            
+          - name: productassemblyid
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+          - name: unitmeasurecode
+            description: ''
+            
+      - name: culture
+        description: ''
+        
+        columns:
+          - name: cultureid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+      - name: document
+        description: ''
+        
+        columns:
+          - name: changenumber
+            description: ''
+            
+          - name: document
+            description: ''
+            
+          - name: documentnode
+            description: ''
+            
+          - name: documentsummary
+            description: ''
+            
+          - name: fileextension
+            description: ''
+            
+          - name: filename
+            description: ''
+            
+          - name: folderflag
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: owner
+            description: ''
+            
+          - name: revision
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: status
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: illustration
+        description: ''
+        
+        columns:
+          - name: diagram
+            description: ''
+            
+          - name: illustrationid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+      - name: location
+        description: ''
+        
+        columns:
+          - name: availability
+            description: ''
+            
+          - name: costrate
+            description: ''
+            
+          - name: locationid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+      - name: product
+        description: ''
+        
+        columns:
+          - name: class
+            description: ''
+            
+          - name: color
+            description: ''
+            
+          - name: daystomanufacture
+            description: ''
+            
+          - name: discontinueddate
+            description: ''
+            
+          - name: finishedgoodsflag
+            description: ''
+            
+          - name: listprice
+            description: ''
+            
+          - name: makeflag
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: productline
+            description: ''
+            
+          - name: productmodelid
+            description: ''
+            
+          - name: productnumber
+            description: ''
+            
+          - name: productsubcategoryid
+            description: ''
+            
+          - name: reorderpoint
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: safetystocklevel
+            description: ''
+            
+          - name: sellenddate
+            description: ''
+            
+          - name: sellstartdate
+            description: ''
+            
+          - name: size
+            description: ''
+            
+          - name: sizeunitmeasurecode
+            description: ''
+            
+          - name: standardcost
+            description: ''
+            
+          - name: style
+            description: ''
+            
+          - name: weight
+            description: ''
+            
+          - name: weightunitmeasurecode
+            description: ''
+            
+      - name: productcategory
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: productcategoryid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: productcosthistory
+        description: ''
+        
+        columns:
+          - name: enddate
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: standardcost
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+      - name: productdescription
+        description: ''
+        
+        columns:
+          - name: description
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productdescriptionid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: productdocument
+        description: ''
+        
+        columns:
+          - name: documentnode
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+      - name: productinventory
+        description: ''
+        
+        columns:
+          - name: bin
+            description: ''
+            
+          - name: locationid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: quantity
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: shelf
+            description: ''
+            
+      - name: productlistpricehistory
+        description: ''
+        
+        columns:
+          - name: enddate
+            description: ''
+            
+          - name: listprice
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+      - name: productmodel
+        description: ''
+        
+        columns:
+          - name: catalogdescription
+            description: ''
+            
+          - name: instructions
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: productmodelid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: productmodelillustration
+        description: ''
+        
+        columns:
+          - name: illustrationid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productmodelid
+            description: ''
+            
+      - name: productmodelproductdescriptionculture
+        description: ''
+        
+        columns:
+          - name: cultureid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productdescriptionid
+            description: ''
+            
+          - name: productmodelid
+            description: ''
+            
+      - name: productphoto
+        description: ''
+        
+        columns:
+          - name: largephoto
+            description: ''
+            
+          - name: largephotofilename
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productphotoid
+            description: ''
+            
+          - name: thumbnailphoto
+            description: ''
+            
+          - name: thumbnailphotofilename
+            description: ''
+            
+      - name: productproductphoto
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: primary
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: productphotoid
+            description: ''
+            
+      - name: productreview
+        description: ''
+        
+        columns:
+          - name: comments
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: productreviewid
+            description: ''
+            
+          - name: rating
+            description: ''
+            
+          - name: reviewdate
+            description: ''
+            
+          - name: reviewername
+            description: ''
+            
+      - name: productsubcategory
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: productcategoryid
+            description: ''
+            
+          - name: productsubcategoryid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: scrapreason
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: scrapreasonid
+            description: ''
+            
+      - name: transactionhistory
+        description: ''
+        
+        columns:
+          - name: actualcost
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: quantity
+            description: ''
+            
+          - name: referenceorderid
+            description: ''
+            
+          - name: referenceorderlineid
+            description: ''
+            
+          - name: transactiondate
+            description: ''
+            
+          - name: transactionid
+            description: ''
+            
+          - name: transactiontype
+            description: ''
+            
+      - name: transactionhistoryarchive
+        description: ''
+        
+        columns:
+          - name: actualcost
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: quantity
+            description: ''
+            
+          - name: referenceorderid
+            description: ''
+            
+          - name: referenceorderlineid
+            description: ''
+            
+          - name: transactiondate
+            description: ''
+            
+          - name: transactionid
+            description: ''
+            
+          - name: transactiontype
+            description: ''
+            
+      - name: unitmeasure
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: unitmeasurecode
+            description: ''
+            
+      - name: vproductmodelcatalogdescription
+        description: ''
+        
+        columns:
+          - name: Summary
+            description: ''
+            
+          - name: bikeframe
+            description: ''
+            
+          - name: color
+            description: ''
+            
+          - name: copyright
+            description: ''
+            
+          - name: crankset
+            description: ''
+            
+          - name: maintenancedescription
+            description: ''
+            
+          - name: manufacturer
+            description: ''
+            
+          - name: material
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: noofyears
+            description: ''
+            
+          - name: pedal
+            description: ''
+            
+          - name: pictureangle
+            description: ''
+            
+          - name: picturesize
+            description: ''
+            
+          - name: productline
+            description: ''
+            
+          - name: productmodelid
+            description: ''
+            
+          - name: productphotoid
+            description: ''
+            
+          - name: producturl
+            description: ''
+            
+          - name: riderexperience
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: saddle
+            description: ''
+            
+          - name: style
+            description: ''
+            
+          - name: warrantydescription
+            description: ''
+            
+          - name: warrantyperiod
+            description: ''
+            
+          - name: wheel
+            description: ''
+            
+      - name: vproductmodelinstructions
+        description: ''
+        
+        columns:
+          - name: LaborHours
+            description: ''
+            
+          - name: LocationID
+            description: ''
+            
+          - name: LotSize
+            description: ''
+            
+          - name: MachineHours
+            description: ''
+            
+          - name: SetupHours
+            description: ''
+            
+          - name: Step
+            description: ''
+            
+          - name: instructions
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: productmodelid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: workorder
+        description: ''
+        
+        columns:
+          - name: duedate
+            description: ''
+            
+          - name: enddate
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: orderqty
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: scrappedqty
+            description: ''
+            
+          - name: scrapreasonid
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+          - name: workorderid
+            description: ''
+            
+      - name: workorderrouting
+        description: ''
+        
+        columns:
+          - name: actualcost
+            description: ''
+            
+          - name: actualenddate
+            description: ''
+            
+          - name: actualresourcehrs
+            description: ''
+            
+          - name: actualstartdate
+            description: ''
+            
+          - name: locationid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: operationsequence
+            description: ''
+            
+          - name: plannedcost
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: scheduledenddate
+            description: ''
+            
+          - name: scheduledstartdate
+            description: ''
+            
+          - name: workorderid
+            description: ''
+            

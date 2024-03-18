@@ -1,0 +1,233 @@
+version: 2
+sources:
+  - name: purchasing
+    tables:
+      - name: productvendor
+        description: ''
+        
+        columns:
+          - name: averageleadtime
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: lastreceiptcost
+            description: ''
+            
+          - name: lastreceiptdate
+            description: ''
+            
+          - name: maxorderqty
+            description: ''
+            
+          - name: minorderqty
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: onorderqty
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: standardprice
+            description: ''
+            
+          - name: unitmeasurecode
+            description: ''
+            
+      - name: purchaseorderdetail
+        description: ''
+        
+        columns:
+          - name: duedate
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: orderqty
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: purchaseorderdetailid
+            description: ''
+            
+          - name: purchaseorderid
+            description: ''
+            
+          - name: receivedqty
+            description: ''
+            
+          - name: rejectedqty
+            description: ''
+            
+          - name: unitprice
+            description: ''
+            
+      - name: purchaseorderheader
+        description: ''
+        
+        columns:
+          - name: employeeid
+            description: ''
+            
+          - name: freight
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: orderdate
+            description: ''
+            
+          - name: purchaseorderid
+            description: ''
+            
+          - name: revisionnumber
+            description: ''
+            
+          - name: shipdate
+            description: ''
+            
+          - name: shipmethodid
+            description: ''
+            
+          - name: status
+            description: ''
+            
+          - name: subtotal
+            description: ''
+            
+          - name: taxamt
+            description: ''
+            
+          - name: vendorid
+            description: ''
+            
+      - name: shipmethod
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: shipbase
+            description: ''
+            
+          - name: shipmethodid
+            description: ''
+            
+          - name: shiprate
+            description: ''
+            
+      - name: vendor
+        description: ''
+        
+        columns:
+          - name: accountnumber
+            description: ''
+            
+          - name: activeflag
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: creditrating
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: preferredvendorstatus
+            description: ''
+            
+          - name: purchasingwebserviceurl
+            description: ''
+            
+      - name: vvendorwithaddresses
+        description: ''
+        
+        columns:
+          - name: addressline1
+            description: ''
+            
+          - name: addressline2
+            description: ''
+            
+          - name: addresstype
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: countryregionname
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: stateprovincename
+            description: ''
+            
+      - name: vvendorwithcontacts
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: contacttype
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailpromotion
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: phonenumber
+            description: ''
+            
+          - name: phonenumbertype
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            

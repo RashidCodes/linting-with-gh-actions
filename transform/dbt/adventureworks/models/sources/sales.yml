@@ -1,0 +1,811 @@
+version: 2
+sources:
+  - name: sales
+    tables:
+      - name: countryregioncurrency
+        description: ''
+        
+        columns:
+          - name: countryregioncode
+            description: ''
+            
+          - name: currencycode
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+      - name: creditcard
+        description: ''
+        
+        columns:
+          - name: cardnumber
+            description: ''
+            
+          - name: cardtype
+            description: ''
+            
+          - name: creditcardid
+            description: ''
+            
+          - name: expmonth
+            description: ''
+            
+          - name: expyear
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+      - name: currency
+        description: ''
+        
+        columns:
+          - name: currencycode
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+      - name: currencyrate
+        description: ''
+        
+        columns:
+          - name: averagerate
+            description: ''
+            
+          - name: currencyratedate
+            description: ''
+            
+          - name: currencyrateid
+            description: ''
+            
+          - name: endofdayrate
+            description: ''
+            
+          - name: fromcurrencycode
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: tocurrencycode
+            description: ''
+            
+      - name: customer
+        description: ''
+        
+        columns:
+          - name: customerid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: personid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: storeid
+            description: ''
+            
+          - name: territoryid
+            description: ''
+            
+      - name: personcreditcard
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: creditcardid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+      - name: salesorderdetail
+        description: ''
+        
+        columns:
+          - name: carriertrackingnumber
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: orderqty
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: salesorderdetailid
+            description: ''
+            
+          - name: salesorderid
+            description: ''
+            
+          - name: specialofferid
+            description: ''
+            
+          - name: unitprice
+            description: ''
+            
+          - name: unitpricediscount
+            description: ''
+            
+      - name: salesorderheader
+        description: ''
+        
+        columns:
+          - name: accountnumber
+            description: ''
+            
+          - name: billtoaddressid
+            description: ''
+            
+          - name: comment
+            description: ''
+            
+          - name: creditcardapprovalcode
+            description: ''
+            
+          - name: creditcardid
+            description: ''
+            
+          - name: currencyrateid
+            description: ''
+            
+          - name: customerid
+            description: ''
+            
+          - name: duedate
+            description: ''
+            
+          - name: freight
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: onlineorderflag
+            description: ''
+            
+          - name: orderdate
+            description: ''
+            
+          - name: purchaseordernumber
+            description: ''
+            
+          - name: revisionnumber
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: salesorderid
+            description: ''
+            
+          - name: salespersonid
+            description: ''
+            
+          - name: shipdate
+            description: ''
+            
+          - name: shipmethodid
+            description: ''
+            
+          - name: shiptoaddressid
+            description: ''
+            
+          - name: status
+            description: ''
+            
+          - name: subtotal
+            description: ''
+            
+          - name: taxamt
+            description: ''
+            
+          - name: territoryid
+            description: ''
+            
+          - name: totaldue
+            description: ''
+            
+      - name: salesorderheadersalesreason
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: salesorderid
+            description: ''
+            
+          - name: salesreasonid
+            description: ''
+            
+      - name: salesperson
+        description: ''
+        
+        columns:
+          - name: bonus
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: commissionpct
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: saleslastyear
+            description: ''
+            
+          - name: salesquota
+            description: ''
+            
+          - name: salesytd
+            description: ''
+            
+          - name: territoryid
+            description: ''
+            
+      - name: salespersonquotahistory
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: quotadate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: salesquota
+            description: ''
+            
+      - name: salesreason
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: reasontype
+            description: ''
+            
+          - name: salesreasonid
+            description: ''
+            
+      - name: salestaxrate
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: salestaxrateid
+            description: ''
+            
+          - name: stateprovinceid
+            description: ''
+            
+          - name: taxrate
+            description: ''
+            
+          - name: taxtype
+            description: ''
+            
+      - name: salesterritory
+        description: ''
+        
+        columns:
+          - name: costlastyear
+            description: ''
+            
+          - name: costytd
+            description: ''
+            
+          - name: countryregioncode
+            description: ''
+            
+          - name: group
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: saleslastyear
+            description: ''
+            
+          - name: salesytd
+            description: ''
+            
+          - name: territoryid
+            description: ''
+            
+      - name: salesterritoryhistory
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: enddate
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+          - name: territoryid
+            description: ''
+            
+      - name: shoppingcartitem
+        description: ''
+        
+        columns:
+          - name: datecreated
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: quantity
+            description: ''
+            
+          - name: shoppingcartid
+            description: ''
+            
+          - name: shoppingcartitemid
+            description: ''
+            
+      - name: specialoffer
+        description: ''
+        
+        columns:
+          - name: category
+            description: ''
+            
+          - name: description
+            description: ''
+            
+          - name: discountpct
+            description: ''
+            
+          - name: enddate
+            description: ''
+            
+          - name: maxqty
+            description: ''
+            
+          - name: minqty
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: specialofferid
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+          - name: type
+            description: ''
+            
+      - name: specialofferproduct
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: productid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: specialofferid
+            description: ''
+            
+      - name: store
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: demographics
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: salespersonid
+            description: ''
+            
+      - name: vindividualcustomer
+        description: ''
+        
+        columns:
+          - name: addressline1
+            description: ''
+            
+          - name: addressline2
+            description: ''
+            
+          - name: addresstype
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: countryregionname
+            description: ''
+            
+          - name: demographics
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailpromotion
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: phonenumber
+            description: ''
+            
+          - name: phonenumbertype
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: stateprovincename
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: vpersondemographics
+        description: ''
+        
+        columns:
+          - name: birthdate
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: datefirstpurchase
+            description: ''
+            
+          - name: education
+            description: ''
+            
+          - name: gender
+            description: ''
+            
+          - name: homeownerflag
+            description: ''
+            
+          - name: maritalstatus
+            description: ''
+            
+          - name: numbercarsowned
+            description: ''
+            
+          - name: numberchildrenathome
+            description: ''
+            
+          - name: occupation
+            description: ''
+            
+          - name: totalchildren
+            description: ''
+            
+          - name: totalpurchaseytd
+            description: ''
+            
+          - name: yearlyincome
+            description: ''
+            
+      - name: vsalesperson
+        description: ''
+        
+        columns:
+          - name: addressline1
+            description: ''
+            
+          - name: addressline2
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: countryregionname
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailpromotion
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: jobtitle
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: phonenumber
+            description: ''
+            
+          - name: phonenumbertype
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: saleslastyear
+            description: ''
+            
+          - name: salesquota
+            description: ''
+            
+          - name: salesytd
+            description: ''
+            
+          - name: stateprovincename
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: territorygroup
+            description: ''
+            
+          - name: territoryname
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: vsalespersonsalesbyfiscalyears
+        description: ''
+        
+        columns:
+          - name: '2012'
+            description: ''
+            
+          - name: '2013'
+            description: ''
+            
+          - name: '2014'
+            description: ''
+            
+          - name: FullName
+            description: ''
+            
+          - name: JobTitle
+            description: ''
+            
+          - name: SalesPersonID
+            description: ''
+            
+          - name: SalesTerritory
+            description: ''
+            
+      - name: vsalespersonsalesbyfiscalyearsdata
+        description: ''
+        
+        columns:
+          - name: fiscalyear
+            description: ''
+            
+          - name: fullname
+            description: ''
+            
+          - name: jobtitle
+            description: ''
+            
+          - name: salespersonid
+            description: ''
+            
+          - name: salesterritory
+            description: ''
+            
+          - name: salestotal
+            description: ''
+            
+      - name: vstorewithaddresses
+        description: ''
+        
+        columns:
+          - name: addressline1
+            description: ''
+            
+          - name: addressline2
+            description: ''
+            
+          - name: addresstype
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: countryregionname
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: stateprovincename
+            description: ''
+            
+      - name: vstorewithcontacts
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: contacttype
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailpromotion
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: phonenumber
+            description: ''
+            
+          - name: phonenumbertype
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: vstorewithdemographics
+        description: ''
+        
+        columns:
+          - name: AnnualRevenue
+            description: ''
+            
+          - name: AnnualSales
+            description: ''
+            
+          - name: BankName
+            description: ''
+            
+          - name: Brands
+            description: ''
+            
+          - name: BusinessType
+            description: ''
+            
+          - name: Internet
+            description: ''
+            
+          - name: NumberEmployees
+            description: ''
+            
+          - name: Specialty
+            description: ''
+            
+          - name: SquareFeet
+            description: ''
+            
+          - name: YearOpened
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: name
+            description: ''
+            

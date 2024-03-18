@@ -1,0 +1,321 @@
+version: 2
+sources:
+  - name: person
+    tables:
+      - name: address
+        description: ''
+        
+        columns:
+          - name: addressid
+            description: ''
+            
+          - name: addressline1
+            description: ''
+            
+          - name: addressline2
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: spatiallocation
+            description: ''
+            
+          - name: stateprovinceid
+            description: ''
+            
+      - name: addresstype
+        description: ''
+        
+        columns:
+          - name: addresstypeid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: businessentity
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: businessentityaddress
+        description: ''
+        
+        columns:
+          - name: addressid
+            description: ''
+            
+          - name: addresstypeid
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: businessentitycontact
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: contacttypeid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: personid
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: contacttype
+        description: ''
+        
+        columns:
+          - name: contacttypeid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+      - name: countryregion
+        description: ''
+        
+        columns:
+          - name: countryregioncode
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+      - name: emailaddress
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailaddressid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: password
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: passwordhash
+            description: ''
+            
+          - name: passwordsalt
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+      - name: person
+        description: ''
+        
+        columns:
+          - name: additionalcontactinfo
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: demographics
+            description: ''
+            
+          - name: emailpromotion
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: namestyle
+            description: ''
+            
+          - name: persontype
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: personphone
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: phonenumber
+            description: ''
+            
+          - name: phonenumbertypeid
+            description: ''
+            
+      - name: phonenumbertype
+        description: ''
+        
+        columns:
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: phonenumbertypeid
+            description: ''
+            
+      - name: stateprovince
+        description: ''
+        
+        columns:
+          - name: countryregioncode
+            description: ''
+            
+          - name: isonlystateprovinceflag
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: stateprovincecode
+            description: ''
+            
+          - name: stateprovinceid
+            description: ''
+            
+          - name: territoryid
+            description: ''
+            
+      - name: vadditionalcontactinfo
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: countryregion
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailspecialinstructions
+            description: ''
+            
+          - name: emailtelephonenumber
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: homeaddressspecialinstructions
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: stateprovince
+            description: ''
+            
+          - name: street
+            description: ''
+            
+          - name: telephonenumber
+            description: ''
+            
+          - name: telephonespecialinstructions
+            description: ''
+            

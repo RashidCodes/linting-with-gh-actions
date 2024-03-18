@@ -1,0 +1,406 @@
+version: 2
+sources:
+  - name: humanresources
+    tables:
+      - name: department
+        description: ''
+        
+        columns:
+          - name: departmentid
+            description: ''
+            
+          - name: groupname
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+      - name: employee
+        description: ''
+        
+        columns:
+          - name: birthdate
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: currentflag
+            description: ''
+            
+          - name: gender
+            description: ''
+            
+          - name: hiredate
+            description: ''
+            
+          - name: jobtitle
+            description: ''
+            
+          - name: loginid
+            description: ''
+            
+          - name: maritalstatus
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: nationalidnumber
+            description: ''
+            
+          - name: organizationnode
+            description: ''
+            
+          - name: rowguid
+            description: ''
+            
+          - name: salariedflag
+            description: ''
+            
+          - name: sickleavehours
+            description: ''
+            
+          - name: vacationhours
+            description: ''
+            
+      - name: employeedepartmenthistory
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: departmentid
+            description: ''
+            
+          - name: enddate
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: shiftid
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+      - name: employeepayhistory
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: payfrequency
+            description: ''
+            
+          - name: rate
+            description: ''
+            
+          - name: ratechangedate
+            description: ''
+            
+      - name: jobcandidate
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: jobcandidateid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: resume
+            description: ''
+            
+      - name: shift
+        description: ''
+        
+        columns:
+          - name: endtime
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+          - name: name
+            description: ''
+            
+          - name: shiftid
+            description: ''
+            
+          - name: starttime
+            description: ''
+            
+      - name: vemployee
+        description: ''
+        
+        columns:
+          - name: additionalcontactinfo
+            description: ''
+            
+          - name: addressline1
+            description: ''
+            
+          - name: addressline2
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: city
+            description: ''
+            
+          - name: countryregionname
+            description: ''
+            
+          - name: emailaddress
+            description: ''
+            
+          - name: emailpromotion
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: jobtitle
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: phonenumber
+            description: ''
+            
+          - name: phonenumbertype
+            description: ''
+            
+          - name: postalcode
+            description: ''
+            
+          - name: stateprovincename
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: vemployeedepartment
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: department
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: groupname
+            description: ''
+            
+          - name: jobtitle
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: vemployeedepartmenthistory
+        description: ''
+        
+        columns:
+          - name: businessentityid
+            description: ''
+            
+          - name: department
+            description: ''
+            
+          - name: enddate
+            description: ''
+            
+          - name: firstname
+            description: ''
+            
+          - name: groupname
+            description: ''
+            
+          - name: lastname
+            description: ''
+            
+          - name: middlename
+            description: ''
+            
+          - name: shift
+            description: ''
+            
+          - name: startdate
+            description: ''
+            
+          - name: suffix
+            description: ''
+            
+          - name: title
+            description: ''
+            
+      - name: vjobcandidate
+        description: ''
+        
+        columns:
+          - name: Addr.Loc.City
+            description: ''
+            
+          - name: Addr.Loc.CountryRegion
+            description: ''
+            
+          - name: Addr.Loc.State
+            description: ''
+            
+          - name: Addr.PostalCode
+            description: ''
+            
+          - name: Addr.Type
+            description: ''
+            
+          - name: EMail
+            description: ''
+            
+          - name: Name.First
+            description: ''
+            
+          - name: Name.Last
+            description: ''
+            
+          - name: Name.Middle
+            description: ''
+            
+          - name: Name.Prefix
+            description: ''
+            
+          - name: Name.Suffix
+            description: ''
+            
+          - name: Skills
+            description: ''
+            
+          - name: WebSite
+            description: ''
+            
+          - name: businessentityid
+            description: ''
+            
+          - name: jobcandidateid
+            description: ''
+            
+          - name: modifieddate
+            description: ''
+            
+      - name: vjobcandidateeducation
+        description: ''
+        
+        columns:
+          - name: Edu.Degree
+            description: ''
+            
+          - name: Edu.EndDate
+            description: ''
+            
+          - name: Edu.GPA
+            description: ''
+            
+          - name: Edu.GPAScale
+            description: ''
+            
+          - name: Edu.Level
+            description: ''
+            
+          - name: Edu.Loc.City
+            description: ''
+            
+          - name: Edu.Loc.CountryRegion
+            description: ''
+            
+          - name: Edu.Loc.State
+            description: ''
+            
+          - name: Edu.Major
+            description: ''
+            
+          - name: Edu.Minor
+            description: ''
+            
+          - name: Edu.School
+            description: ''
+            
+          - name: Edu.StartDate
+            description: ''
+            
+          - name: jobcandidateid
+            description: ''
+            
+      - name: vjobcandidateemployment
+        description: ''
+        
+        columns:
+          - name: Emp.EndDate
+            description: ''
+            
+          - name: Emp.FunctionCategory
+            description: ''
+            
+          - name: Emp.IndustryCategory
+            description: ''
+            
+          - name: Emp.JobTitle
+            description: ''
+            
+          - name: Emp.Loc.City
+            description: ''
+            
+          - name: Emp.Loc.CountryRegion
+            description: ''
+            
+          - name: Emp.Loc.State
+            description: ''
+            
+          - name: Emp.OrgName
+            description: ''
+            
+          - name: Emp.Responsibility
+            description: ''
+            
+          - name: Emp.StartDate
+            description: ''
+            
+          - name: jobcandidateid
+            description: ''
+            

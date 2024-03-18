@@ -1,0 +1,30 @@
+adventureworks:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: kingmoh
+      password: mysecretpassword
+      port: 5432
+      dbname: adventureworks
+      schema: dbo
+      threads: 4
+    ci:
+      type: postgres
+      host: postgres
+      user: postgres
+      password: postgres
+      port: 5432
+      dbname: adventureworks
+      schema: dbo
+      threads: 4
+    prod:
+      type: postgres
+      host: "{{ env_var('DBT_HOST', '') }}"
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD', '') }}"
+      port: 5432
+      dbname: "{{ env_var('DBT_DATABASE', 'adventureworks') }}"
+      schema: "{{ env_var('DBT_SCHEMA', 'dbo') }}"
+      threads: 4
