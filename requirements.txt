@@ -1,3 +1,4 @@
 sqlfluff==2.3.2
 sqlfluff-templater-dbt==2.3.2
 mdformat==0.5.1
+black==22.8.0
