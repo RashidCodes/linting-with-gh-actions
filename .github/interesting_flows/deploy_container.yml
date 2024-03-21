@@ -13,7 +13,7 @@ env:
   # Set this to the URI of your ECR repo
   ECR_REPO_URI: 850980769302.dkr.ecr.us-east-1.amazonaws.com/dev-tf-demo
   # Set this to the AWS role Github Actions will assume
-  AWS_ROLE_TO_ASSUME: arn:aws:iam::850980769302:role/ROLE-GH-DE
+  AWS_ROLE_TO_ASSUME: arn:aws:iam::850980769302:role/best_role
 
 jobs:
   deploy_to_ecr:

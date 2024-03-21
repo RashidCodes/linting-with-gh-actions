@@ -1,3 +1,4 @@
+# Basic Workflow to test the OpenID integration
 name: List AWS S3 buckets
 
 on:
@@ -6,13 +7,13 @@ on:
     branches: [main]
 
 env:
-  ROLE_TO_ASSUME: arn:aws:iam::850980769302:role/ROLE-GITHUB-ACTIONS-DE
-  AWS_REGION: ap-southeast-2 # Change to reflect your Region
+  ROLE_TO_ASSUME: arn:aws:iam::850980769302:role/ROLE-LAST-CLASS-DEMO
+  AWS_REGION: us-east-1
 
 # Permission can be added at job level or workflow level
 permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: read # This is required for actions/checkout
+  id-token: write
+  contents: read
 
 jobs:
   AssumeRoleAndCallIdentity:
