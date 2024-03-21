@@ -33,4 +33,4 @@ jobs:
       # Test if we can list out buckets in our account
       - name: List buckets
         run: |
-          az login
+          aws s3 ls
