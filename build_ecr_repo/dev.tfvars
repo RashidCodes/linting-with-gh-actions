@@ -1,3 +1,3 @@
 environment = "dev"
-repo_name   = "tf-demo"
+repo_name   = "chris-repo"
 aws_region  = "us-east-1"
