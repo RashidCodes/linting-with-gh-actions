@@ -11,9 +11,9 @@ env:
   # Set this to your AWS region, e.g. us-east-1
   AWS_REGION: us-east-1
   # Set this to the URI of your ECR repo
-  ECR_REPO_URI: <account-id>.dkr.ecr.<aws-region>.amazonaws.com/<repo-name>
+  ECR_REPO_URI: 590183945880.dkr.ecr.us-east-1.amazonaws.com/dev-my-repo
   # Set this to the AWS role Github Actions will assume
-  AWS_ROLE_TO_ASSUME: arn:aws:iam::<account-id>:role/<role-name>
+  AWS_ROLE_TO_ASSUME: arn:aws:iam::590183945880:role/test_github_workflows_role
 
 jobs:
   deploy_to_ecr:
@@ -52,3 +52,33 @@ jobs:
           docker build -t ${ECR_REPO_URI}:${IMAGE_TAG} .
           docker push ${ECR_REPO_URI}:${IMAGE_TAG}
           echo "image=${ECR_REPO_URI}:${IMAGE_TAG}" >> $GITHUB_OUTPUT
+
+  deploy_to_ecs:
+    runs-on: ubuntu-latest
+    # These permissions are needed to interact with GitHub's OIDC Token endpoint.
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout code repository in agent
+        uses: actions/checkout@v4
+        with:
+          set-safe-directory: true
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ env.AWS_ROLE_TO_ASSUME }}
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Deploy to ECS
+        id: deploy-to-ecs
+        env:
+          TF_VAR_SNOWFLAKE_USERNAME: ${{ secrets.SNOWFLAKE_USERNAME }}
+          TF_VAR_SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
+          TF_VAR_SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
+          TF_VAR_SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
+        run: |
+          bash ./bin/deploy_ecs.sh
