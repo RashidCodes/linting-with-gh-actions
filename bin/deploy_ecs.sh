@@ -3,4 +3,4 @@
 export TOP_DIR=$(git rev-parse --show-toplevel)
 cd provision_ecs_task
 terraform init
-terraform plan
+terraform apply -auto-approve

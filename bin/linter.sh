@@ -8,7 +8,7 @@ main() {
     black "${TOP_DIR}/src/"
 
     # Setup dbt
-    dbt deps --project-dir "${TOP_DIR}/transform/dbt/adventureworks"
+    # dbt deps --project-dir "${TOP_DIR}/transform/dbt/adventureworks"
 
     # Lint SQL
     sqlfluff fix -f "${TOP_DIR}"/transform/dbt/adventureworks
