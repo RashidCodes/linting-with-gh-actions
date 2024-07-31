@@ -101,19 +101,19 @@ resource "aws_ecs_task_definition" "task_definition" {
       ]
       environment = [
         {
-          name  = SNOWFLAKE_ACCOUNT
+          name  = "SNOWFLAKE_ACCOUNT"
           value = var.SNOWFLAKE_ACCOUNT
         },
         {
-          name  = SNOWFLAKE_USERNAME
+          name  = "SNOWFLAKE_USERNAME"
           value = var.SNOWFLAKE_USERNAME
         },
         {
-          name  = SNOWFLAKE_PASSWORD
+          name  = "SNOWFLAKE_PASSWORD"
           value = var.SNOWFLAKE_PASSWORD
         },
         {
-          name  = SNOWFLAKE_ROLE
+          name  = "SNOWFLAKE_ROLE"
           value = var.SNOWFLAKE_ROLE
         },
       ]
