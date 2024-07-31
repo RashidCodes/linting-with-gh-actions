@@ -2,5 +2,6 @@
 .aws_env
 .vars/.env*
 provision_ecr/.terraform
+provision_ecr/.terraform.lock.hcl
 provision_ecs_task/.terraform
 *.tfstate
