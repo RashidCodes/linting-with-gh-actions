@@ -80,5 +80,9 @@ jobs:
           TF_VAR_SNOWFLAKE_PASSWORD: ${{ secrets.SNOWFLAKE_PASSWORD }}
           TF_VAR_SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
           TF_VAR_SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_ROLE }}
+          TF_VAR_cluster_arn: ${{ secrets.CLUSTER_ARN }}
+          TF_VAR_ecr_repo: ${{ secrets.ECR_REPO }}
+          TF_VAR_image_tag: ${{ secrets.IMAGE_TAG }}
+          TF_VAR_aws_region: ${{ secrets.AWS_REGION }}
         run: |
           bash ./bin/deploy_ecs.sh
