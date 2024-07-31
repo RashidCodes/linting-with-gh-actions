@@ -1,3 +1,6 @@
 .DS_Store
 .aws_env
 .vars/.env*
+provision_ecr/.terraform
+provision_ecs_task/.terraform
+*.tfstate
