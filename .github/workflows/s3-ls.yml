@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  ROLE_TO_ASSUME:  arn:aws:iam::590183945880:role/test_github_workflows_role
+  ROLE_TO_ASSUME:  arn:aws:iam::590183945880:role/last_dec_lesson_role
   AWS_REGION : us-east-1 # Change to reflect your Region
 
 # Permission can be added at job level or workflow level
